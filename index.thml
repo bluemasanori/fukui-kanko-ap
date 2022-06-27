@@ -1,1 +1,20 @@
-
+<script type="module">
+import{bg,show }from"https://js.sabae.cc/egadv.js";
+await bg(34);
+for(;;){
+let a =await show("ここはどこだろう？",["富山県","石川県","福井県"]);
+if (a=="福井県"){
+    await show("正解");
+    for(;;){
+    let b=await show("何市にあるかわかりますか？",["福井市","あわら市","坂井市"])
+    if(b=="坂井市"){
+    await show("正解！すごいね！")
+    break;
+    }else{
+        await show("残念！")
+    }}break;
+}else{
+    await show("違うよ！")
+}
+}
+</script>
